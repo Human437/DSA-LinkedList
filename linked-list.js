@@ -113,7 +113,6 @@ main()
 
 function display(linkedList){
   let values = []
-  let counter = 0;
   if (!linkedList.head){
     return null
   }
@@ -121,7 +120,6 @@ function display(linkedList){
   while((currentNode !== null)){
     values.push(currentNode.value)
     currentNode = currentNode.next;
-    counter += 1
   }
   return values
 }
