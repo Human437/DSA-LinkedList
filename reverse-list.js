@@ -1,4 +1,5 @@
 const LinkedList = require('./linked-list')
+const display = require('./displayLinkedList')
 
 let SLL;
 
@@ -18,18 +19,6 @@ function main(){
 }
 main()
 
-function display(linkedList){
-  let values = []
-  if (!linkedList.head){
-    return null
-  }
-  let currentNode = linkedList.head;
-  while((currentNode !== null)){
-    values.push(currentNode.value)
-    currentNode = currentNode.next;
-  }
-  return values
-}
 console.log(display(SLL))
 
 function iterativeReverseList(linkedList){
