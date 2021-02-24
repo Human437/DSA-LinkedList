@@ -123,7 +123,7 @@ function display(linkedList){
   }
   return values
 }
-console.log(display(SLL))
+// console.log(display(SLL))
 
 function size(linkedList){
   let counter = 0;
@@ -138,14 +138,14 @@ function size(linkedList){
   return counter
 }
 
-console.log(size(SLL))
+// console.log(size(SLL))
 
 function isEmpty(linkedList){
   return !linkedList.head
 }
 let test = new LinkedList()
-console.log(isEmpty(SLL))
-console.log(isEmpty(test))
+// console.log(isEmpty(SLL))
+// console.log(isEmpty(test))
 
 function findPrevious(item,linkedList){
   if (!linkedList.head){
@@ -164,7 +164,7 @@ function findPrevious(item,linkedList){
   return previousNode
 }
 
-console.log(findPrevious('Starbuck',SLL))
+// console.log(findPrevious('Starbuck',SLL))
 
 function findLast(linkedList){
   if (!linkedList.head){
@@ -180,4 +180,6 @@ function findLast(linkedList){
   return currentNode
 }
 
-console.log(findLast(SLL))
+// console.log(findLast(SLL))
+
+module.exports = LinkedList
